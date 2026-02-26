@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: mongodb
-        image: "{{ Values.StatefulSet.imageURL}}:{{ .Values.StatefulSet.igameVersion }}"
+        image: "{{ .Values.StatefulSet.imageURL}}:{{ .Values.StatefulSet.imageVersion }}"
         volumeMounts:
         - name: mongodb-data
           mountPath: /data/db
